@@ -11,9 +11,9 @@
 			<header class="site-header">
 				<div class="brand">Maruf Hasan</div>
 				<nav class="nav">
-					<a href="#projects">Projects</a>
-					<a href="#contact">Contact</a>
-					<a class="resume" href="#">Resume</a>
+					<a href="projects.html">Projects</a>
+					<a href="about.html">About</a>
+					<a class="resume" href="assets/Maruf_Resume.pdf">Resume</a>
 				</nav>
 			</header>
 			<section class="hero">
@@ -22,6 +22,9 @@
 						<!-- Put your photo in the repository at assets/Maruf.jpg and the page will use it -->
 						<div class="photo" id="profile-photo">
 							<picture>
+								<!-- Try local absolute path (only works when opening the page locally and permitted by the browser) -->
+								<source srcset="file:///E:/3rdyear/2nd_sem/3201/Maruf.jpg" type="image/jpeg">
+								<!-- Repository-relative fallback (recommended for hosting) -->
 								<source srcset="assets/Maruf.jpg" type="image/jpeg">
 								<img class="photo-img" src="assets/Maruf.svg" alt="Maruf Hasan">
 							</picture>
