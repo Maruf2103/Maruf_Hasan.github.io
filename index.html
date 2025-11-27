@@ -1,81 +1,151 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Maruf Hasan — Portfolio</title>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<main class="container">
-			<header class="site-header">
-				<div class="brand">Maruf Hasan</div>
-				<nav class="nav">
-					<a href="projects.html">Projects</a>
-					<a href="about.html">About</a>
-					<a class="resume" href="assets/Maruf_Resume.pdf">Resume</a>
-				</nav>
-			</header>
-			<section class="hero">
-				<div class="card">
-					<div class="photo-wrap">
-						<!-- Put your photo in the repository at assets/Maruf.jpg and the page will use it -->
-						<div class="photo" id="profile-photo">
-							<picture>
-								<!-- Repository-relative first choice for hosting -->
-								<source srcset="assets/Maruf.jpg" type="image/jpeg">
-								<img class="photo-img" src="assets/Maruf.svg" alt="Maruf Hasan">
-							</picture>
-						</div>
-						<div class="photo-instructions">Tip: use a square image ~800px and name it <code>assets/Maruf.jpg</code></div>
-					</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maruf Hasan Shuvo - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
-					<div class="info">
-						<h1 class="name">Maruf Hasan</h1>
-						<p class="tag">CSE Student — 3rd year</p>
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="logo">Maruf Hasan Shuvo</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#stack">Stack</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+<section id="home" class="section home">
+    <div class="intro-content">
+        <img src="./images/maruf1.jpg" alt="Maruf Hasan Shuvo Profile Picture" class="profile-pic">
+        
+        <h1>Hello, I'm Maruf Hasan Shuvo 👋</h1>
+        <p>A student committed to continuous learning and growth. I build scalable backends with Python/Django and create dynamic mobile apps using Flutter/Dart. Eager to collaborate and dedicated to finding the cleanest solution for every complex challenge.</p>
+        
+        </div>
+</section>
 
-						<div class="bio">
-							<p>
-								I'm a passionate computer science student in my 3rd year. I love coding,
-								learning new technologies, and implementing solutions that solve real-life
-								problems. Currently exploring web development, algorithms, and systems.
-							</p>
-						</div>
+   <section id="projects" class="section projects">
+    <h2>My Current Projects 🛠️</h2>
+    <div class="projects-grid">
+        
+        <div class="project-card">
+            <h3>CV Builder Platform</h3>
+            <p>A web application built using the **Django framework and Python** that dynamically generates professional CVs based on user input, demonstrating full-stack web development skills.</p>
+            <div class="project-tags">
+                <span>Django</span><span>Python</span><span>HTML</span><span>CSS</span>
+            </div>
+            <a href="https://github.com/Maruf2103/CV_BUILDER" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+        
+        <div class="project-card">
+            <h3>Facial Recognition Model</h3>
+            <p>A Machine Learning model developed in **Python** for accurate facial recognition. This project highlights experience with **data preprocessing, training, and deploying** ML algorithms.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Machine Learning</span><span>AI</span>
+            </div>
+            <a href="#" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+        
+        <div class="project-card">
+            <h3>RoomEasy</h3>
+            <p>A web application built using **PHP**, likely focusing on room management, booking, or shared housing. Demonstrates backend logic and database interaction.</p>
+            <div class="project-tags">
+                <span>PHP</span><span>Web Development</span><span>Backend</span>
+            </div>
+            <a href="https://github.com/Maruf2103/RoomEasy" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+        
+        <div class="project-card">
+            <h3>Flutter Weather Application</h3>
+            <p>A cross-platform mobile application developed with **Flutter and Dart** that integrates a third-party API to fetch and display real-time weather data with a clean, responsive UI.</p>
+            <div class="project-tags">
+                <span>Flutter</span><span>Dart</span><span>Mobile Development</span><span>API Integration</span>
+            </div>
+            <a href="https://github.com/Maruf2103/Weather_App1" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
 
-						<div class="actions">
-							<a class="btn" href="#projects">See Projects</a>
-							<a class="btn ghost" href="#contact">Contact</a>
-						</div>
-					</div>
-				</div>
-			</section>
+       <div class="project-card">
+    <h3>TMS - Bus Management System</h3>
+    <p>A full-stack Transportation Management System built on Django (Python) for the backend API and React for the modern frontend interface. Features include bus booking, resource management, and tracking.</p>
+    <div class="project-tags">
+        <span>Django</span><span>Python</span><span>React</span><span>Booking System</span>
+    </div>
+    <a href="https://github.com/Maruf2103/tms_new" target="_blank" class="github-link">
+        <i class="fab fa-github"></i> View on GitHub
+    </a>
+</div>
+        <div class="project-card">
+            <h3>My To-Do (Desktop GUI)</h3>
+            <p>A desktop to-do list application developed using Python that features a Graphical User Interface (GUI) for seamless, local task management.</p>
+            <div class="project-tags">
+                <span>Python</span><span>GUI</span><span>Desktop App</span>
+            </div>
+            <a href="https://github.com/Maruf2103/MY_TO_DO" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+        
+    </div>
+</section>
+<section id="stack" class="section stack">
+    <h2>Skills & Expertise 🌟</h2>
+    <div class="stack-icons">
+        <div class="stack-item"><i class="icon fab fa-python" style="color:#306998;"></i><span>Python</span></div>
+        <div class="stack-item"><i class="icon fab fa-js-square" style="color:#F7DF1E;"></i><span>JavaScript</span></div>
+        <div class="stack-item"><i class="icon fas fa-code" style="color:#A8B9CC;"></i><span>C</span></div>
+        <div class="stack-item"><i class="icon fas fa-code" style="color:#00599C;"></i><span>C++</span></div>
+        <div class="stack-item"><i class="icon fab fa-java" style="color:#007396;"></i><span>Java</span></div>
 
-			<section id="projects" class="placeholder">
-				<h2>Selected Projects</h2>
-				<div class="projects-grid">
-					<article class="project">
-						<h3>Project One</h3>
-						<p class="muted">Short description of a project. Add a link to the repo or demo.</p>
-						<a class="project-link" href="#">View</a>
-					</article>
-					<article class="project">
-						<h3>Project Two</h3>
-						<p class="muted">Short description of another project.</p>
-						<a class="project-link" href="#">View</a>
-					</article>
-					<article class="project">
-						<h3>Project Three</h3>
-						<p class="muted">Short description of another project.</p>
-						<a class="project-link" href="#">View</a>
-					</article>
-				</div>
-			</section>
+        <div class="stack-item"><i class="icon fab fa-php" style="color:#777BB4;"></i><span>PHP</span></div>
+        <div class="stack-item"><i class="icon fas fa-laptop-code" style="color:#092E20;"></i><span>Django</span></div>
+        <div class="stack-item"><i class="icon fab fa-html5" style="color:#E34F26;"></i><span>HTML5</span></div>
+        <div class="stack-item"><i class="icon fab fa-css3-alt" style="color:#1572B6;"></i><span>CSS3</span></div>
+        
+        <div class="stack-item"><i class="icon fas fa-mobile-alt" style="color:#02569B;"></i><span>Flutter</span></div>
+        <div class="stack-item"><i class="icon fas fa-terminal" style="color:#0175C2;"></i><span>Dart</span></div>
+        
+        <div class="stack-item"><i class="icon fas fa-database" style="color:#4479A1;"></i><span>MySQL</span></div>
+        <div class="stack-item"><i class="icon fas fa-brain" style="color:#6A5ACD;"></i><span>Machine Learning</span></div>
+    </div>
+</section>
+    <section id="contact" class="section contact">
+        <h2>Get In Touch 📧</h2>
+        <p>I'm currently open to new opportunities. Feel free to connect!</p>
+        <div class="contact-links">
+            <a href="https://github.com/Maruf2103" target="_blank" class="contact-icon github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank" class="contact-icon linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/marufhassan.shuvo.5" target="_blank" class="contact-icon facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="mailto:marufshuvo999@example.com" class="contact-icon email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            </div>
+        <p class="email-text">Or send me a direct email: **your.email@example.com**</p>
+    </section>
 
-			<section id="contact" class="placeholder">
-				<h2>Contact</h2>
-				<p class="muted">Add your email or social links here.</p>
-			</section>
-		</main>
-	</body>
+    <footer>
+        <p>&copy; 2025 Maruf Hasan Shuvo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
-
